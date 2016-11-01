@@ -23,7 +23,7 @@ module.exports = function(environment) {
     }
   };
 
-  ENV.COUCH_URL = process.env.COUCH_URL || 'https://fivetanley.cloudant.com/docs';
+  ENV.COUCH_URL = process.env.COUCH_URL || 'https://gaurav0.cloudant.com/docs';
   if (environment === 'development') {
     ENV['ember-cli-mirage'] = {
       enabled: false
@@ -52,7 +52,7 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-    ENV.COUCH_URL = process.env.COUCH_URL || 'https://fivetanley.cloudant.com/docs';
+    ENV.COUCH_URL = process.env.COUCH_URL || 'https://gaurav0.cloudant.com/docs';
   }
 
   if (environment === 'production') {
