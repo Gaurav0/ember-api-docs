@@ -7,7 +7,9 @@ export default Ember.Route.extend({
 
   model(params) {
     const id = `${params.project}-${params.project_version}`;
-    return this.store.find('project-version', id);
+    return this.store.find('project', params.project).then(() => {
+      return this.store.find('project-version', id);
+    });
   },
 
   afterModel(model, transition) {
@@ -55,4 +57,3 @@ export default Ember.Route.extend({
     }
   }
 });
-
