@@ -11,7 +11,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test --launch=Firefox",
-    "heroku-postbuild": "bower install && ember deploy production && cd tmp/deploy-dist && npm install && cd ../.."
+    "heroku-postbuild": "bower install && rm -rf tmp/deploy-dist && ember deploy production && cd tmp/deploy-dist && npm install && cd ../.."
   },
   "repository": "",
   "engines": {
@@ -26,8 +26,7 @@
   },
   "cacheDirectories": [
     "bower_components",
-    "node_modules",
-    "tmp/deploy-dist"
+    "node_modules"
   ],
   "devDependencies": {
     "bower": "^1.0.0",
