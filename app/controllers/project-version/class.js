@@ -3,7 +3,6 @@ import _ from 'lodash/lodash';
 
 const { computed } = Ember;
 
-
 export default Ember.Controller.extend({
   filteredMethods: computed('model.methods.[]', 'showInherited', 'showProtected', 'showPrivate', 'showDeprecated', function() {
     return this.filterItems('methods');
