@@ -24,6 +24,8 @@ module.exports = function(environment) {
   };
 
   ENV.COUCH_URL = process.env.COUCH_URL || 'https://gaurav0.cloudant.com/docs';
+  ENV.COUCH_USERNAME = process.env.COUCH_USERNAME || 'nobody';
+  ENV.COUCH_PASSWORD = process.env.COUCH_PASSWORD || '';
   if (environment === 'development') {
     ENV['ember-cli-mirage'] = {
       enabled: false
