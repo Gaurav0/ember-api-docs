@@ -105,8 +105,8 @@
     "browserslist": "2.11.3"
   },
   "engines": {
-    "node": "10.* || 11.*",
-    "npm": "5"
+    "node": ">= 10",
+    "npm": "6"
   },
   "cacheDirectories": [
     "node_modules"
@@ -118,7 +118,7 @@
     "abortcontroller-polyfill/dist/cjs-ponyfill"
   ],
   "volta": {
-    "node": "11.15.0",
+    "node": "12.16.1",
     "yarn": "1.22.4"
   }
 }
